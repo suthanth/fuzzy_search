@@ -25,7 +25,7 @@ SECRET_KEY = '=e%gq=4usa9-2yq0c4)#$w$pgs+rc2_o*@lx%irdy#+zese6p1'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['*']
 
 
 # Application definition
@@ -37,7 +37,8 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'fuzzy_search_api',
+    'rest_framework',
+    'fuzzy_search.fuzzy_search_api',
 ]
 
 MIDDLEWARE = [
