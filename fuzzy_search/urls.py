@@ -20,5 +20,5 @@ from fuzzy_search.fuzzy_search_api.views import FuzzySearch
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('fuzzy_search', FuzzySearch.as_view(), name='fuzzy-search'),
+    path('search', FuzzySearch.as_view(), name='fuzzy-search'),
 ]
